@@ -8,7 +8,9 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("ex01/fig/pg_bg.jpg")
     kokaton_img=pg.image.load("ex01/fig/3.png")
-    kokaton_img=pg.transform.flip(kokaton_img,True,False)
+    kokaton_img1=pg.transform.flip(kokaton_img,True,False)
+    kokaton_img2=pg.transform.rotozoom(kokaton_img,10,1.0)
+    s=[kokaton_img1,kokaton_img2]
     tmr = 0
     while True:
         for event in pg.event.get():
